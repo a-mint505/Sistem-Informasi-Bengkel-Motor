@@ -215,7 +215,10 @@ const Payments = () => {
                           <td className="py-2 text-center">x{item.qty}</td>
                           <td className="py-2 text-right">Rp {(item.price * item.qty).toLocaleString('id-ID')}</td>
                           <td className="py-2 text-right">
-                            <button type="button" onClick={() => handleRemoveItem(item.sparepartId)} className="text-danger" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>Hapus</button>
+                            <div className="flex items-center gap-1 justify-end">
+                              <button type="button" onClick={() => handleAddItem(item.sparepartId)} className="text-primary px-2" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>Tambah</button>
+                              <button type="button" onClick={() => handleRemoveItem(item.sparepartId)} className="text-danger px-2" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>Hapus</button>
+                            </div>
                           </td>
                         </tr>
                       ))}
