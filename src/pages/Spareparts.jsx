@@ -119,8 +119,8 @@ const Spareparts = () => {
               <tr>
                 <th>No</th>
                 <th>Nama Sparepart</th>
-                <th>Stok</th>
                 <th>Harga Satuan (Rp)</th>
+                <th>Stok</th>
                 <th>Kategori</th>
                 <th>Aksi</th>
               </tr>
